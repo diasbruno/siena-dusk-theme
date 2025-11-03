@@ -7,6 +7,26 @@ It’s designed for focus and comfort during long coding sessions, balancing war
 
 ---
 
+## Color Palette
+
+| Name               | Lisp Symbol          | Hex Code  | Description                |
+|--------------------|----------------------|------------|-----------------------------|
+| Background         | `bg`                 | `#12181c` | Deep coal gray background   |
+| Foreground         | `fg`                 | `#f2efe9` | Soft white foreground       |
+| Green              | `green-color`        | `#7a913c` | Muted olive green           |
+| Creme              | `creme-color`        | `#d19a66` | Warm amber creme            |
+| Brownish           | `brownish-color`     | `#a86c4c` | Siena clay brown            |
+| Brown              | `brown-color`        | `#6f4c3a` | Burnt umber brown           |
+| Dark Blue          | `dark-blue-color`    | `#34495e` | Deep dusk blue              |
+| Light Red          | `light-red-color`    | `#ba6f5d` | Gentle terracotta red       |
+| Red                | `red-color`          | `#b45a44` | Earthy clay red             |
+| Light Blue         | `light-blue-color`   | `#92a8b6` | Misty gray-blue             |
+| Light Gray         | `light-gray-color`   | `#71797f` | Muted steel gray            |
+| Light Creme        | `light-creme-color`  | `#e7b97b` | Pale sand creme             |
+| Cocoa              | `cocoa-color`        | `#9c5938` | Dark reddish brown cocoa    |
+
+---
+
 ## Features
 
 - **Dark background** with low contrast edges for eye comfort.

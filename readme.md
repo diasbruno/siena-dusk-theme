@@ -17,25 +17,6 @@ It’s designed for focus and comfort during long coding sessions, balancing war
 
 ---
 
-## Color Palette
-
-| Element               | Color Hex  | Description                     |
-|------------------------|------------|----------------------------------|
-| Background             | `#12181c` | Deep coal gray                  |
-| Foreground (default)   | `#f2efe9` | Soft white                      |
-| Accent                 | `#d19a66` | Warm amber                      |
-| Accent 2               | `#a86c4c` | Siena brown                     |
-| Accent 3               | `#6f4c3a` | Burnt umber                     |
-| Accent 4               | `#34495e` | Dusk blue                       |
-| Comment                | `#71797f` | Muted gray                      |
-| String                 | `#c7a97a` | Pale ochre                      |
-| Keyword                | `#9c5938` | Dark reddish brown              |
-| Function name          | `#e7b97b` | Sand yellow                     |
-| Error                  | `#b45a44` | Clay red                        |
-| Link                   | `#92a8b6` | Cool gray-blue                  |
-
----
-
 ## Installation
 
 1. Place `siena-dusk-theme.el` in your Emacs `~/.emacs.d/themes/` directory.

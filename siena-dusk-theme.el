@@ -5,7 +5,7 @@
 ;; Author: Bruno Dias <your.email@example.com>
 ;; Maintainer: Bruno Dias <your.email@example.com>
 ;; Created: November 2025
-;; Version: 1.0
+;; Version: 1.1
 ;; Package-Requires: ((emacs "24.1"))
 ;; Keywords: faces, theme, dark, warm
 ;; Homepage: https://github.com/diasbruno/siena-dusk-theme
@@ -49,30 +49,46 @@
   "A warm dark theme inspired by the city lights of Siena at dusk.")
 
 (let* ((bg "#12181c")
-      (fg  "#f2efe9")
-      (accent "#d19a66")
-      (accent2 "#a86c4c")
-      (accent3 "#6f4c3a")
-      (accent4 "#34495e")
-      (comment "#71797f")
-      (string "#92a8b6")
-      (keyword "#9c5938")
-      (function "#e7b97b")
-      (error "#b45a44")
-      (link string))
+       (fg  "#f2efe9")
+       (green-color "#7a913c")
+       (creme-color "#d19a66")
+       (brownish-color "#a86c4c")
+       (brown-color "#6f4c3a")
+       (dark-blue-color "#34495e")
+       (light-red-color "#ba6f5d")
+       (red-color "#b45a44")
+       (light-blue-color "#92a8b6")
+       (light-gray-color "#71797f")
+       (light-creme-color "#e7b97b")
+       (cocoa-color "#9c5938")
+       (comment light-gray-color)
+       (string light-blue-color)
+       (keyword cocoa-color)
+       (function light-creme-color)
+       (error red-color)
+       (success green-color)
+       (warning light-red-color)
+       (link light-blue-color))
   (custom-theme-set-faces
    'siena-dusk
    `(default ((t (:background ,bg :foreground ,fg))))
-   `(cursor ((t (:background ,accent))))
-   `(region ((t (:background ,accent3 :foreground ,fg))))
+   `(cursor ((t (:background ,fg))))
+   `(region ((t (:background ,brown-color :foreground ,fg))))
    `(font-lock-comment-face ((t (:foreground ,comment :slant italic))))
    `(font-lock-keyword-face ((t (:foreground ,keyword :weight bold))))
    `(font-lock-string-face ((t (:foreground ,string))))
    `(font-lock-function-name-face ((t (:foreground ,function :weight bold))))
-   `(font-lock-variable-name-face ((t (:foreground ,accent2))))
-   `(minibuffer-prompt ((t (:foreground ,accent :weight bold))))
-   `(mode-line ((t (:background ,accent4 :foreground ,fg :box nil))))
-   `(mode-line-inactive ((t (:background ,bg :foreground ,comment :box (:color ,bg)))))
+   `(font-lock-type-face ((t (:foreground ,creme-color :weight bold))))
+   `(font-lock-constant-face ((t (:foreground ,string :weight bold))))
+   `(font-lock-variable-name-face ((t (:foreground ,brownish-color))))
+   `(minibuffer-prompt ((t (:foreground ,creme-color :weight bold))))
+   `(mode-line ((t (:background ,dark-blue-color :foreground ,fg :box nil))))
+   `(mode-line-inactive ((t (:background ,bg :foreground ,comment))))
+   `(highlight ((t (:background ,dark-blue-color))))
+   `(trailing-whitespace ((t (:background ,red-color))))
+   `(fringe ((t (:background ,bg))))
+   `(success ((t (:foreground ,success :weight bold))))
+   `(warning ((t (:foreground ,warning :weight bold))))
    `(error ((t (:foreground ,error :weight bold))))
    `(link ((t (:foreground ,link :underline t))))))
 
@@ -84,3 +100,4 @@
 
 (provide-theme 'siena-dusk)
 ;;; siena-dusk-theme.el ends here
+(hl-line-mode)
